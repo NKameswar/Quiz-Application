@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="rules-container">
+        <h1>Quiz Rules</h1>
+        <h4>Here are the rules for the quiz:</h4>
+        <h4>
+        <p>
+            1.You are presented with a set of five questions that require your responses.<br><br>
+            2.Each question offers four options, and you must select a single correct answer from among them.<br><br>
+            3.For each correct answer, you will earn one point, and there is no penalty for incorrect responses.<br><br>
+            4.You have a maximum time limit of 20 seconds to provide your answer to each question.<br><br>  
+            5.If you are unable to answer within the allotted time, the system will automatically advance you to the next question.<br>
+            </p>
+</h4>
+        <h2>All the best</h2>
+        
+        <button id="start-quiz-button">Start Quiz</button>
+    </div>
+    
+
+    <div class="quiz-container" style="display: none;">
+        <div id="timer-display">00:20</div>
+        <div class="question">
+            <p id="question-text">Question 1: What is 2 + 2?</p>
+        </div>
+        
+        <div class="answers">
+            <label>
+                <input type="radio" name="answer" value="A"> A. 3
+            </label>
+            <label>
+                <input type="radio" name="answer" value="B"> B. 4
+            </label>
+            <label>
+                <input type="radio" name="answer" value="C"> C. 5
+            </label>
+            <label>
+                <input type="radio" name="answer" value="D"> D. 6
+            </label>
+        </div>
+        
+        <button id="next-button">Next</button>
+        <div class="loading-container" id="loading-container">
+            <div class="loading-spinner"></div>
+        </div>
+        <div id="feedback"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
